@@ -1,3 +1,4 @@
+-- ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
 create table category (id integer primary key auto_increment, title varchar(100));
 
 
@@ -13,6 +14,6 @@ create table product (id integer primary key auto_increment, title varchar(100),
 
 create table user (id integer primary key auto_increment, name varchar(100), email varchar(100), password varchar(100), phone varchar(20));
 
--- ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+
 -- use mysql;
 -- update user set authentication_string=password(''), plugin='mysql_native_password' where user='root';
