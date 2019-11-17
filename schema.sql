@@ -13,5 +13,4 @@ create table product (id integer primary key auto_increment, title varchar(100),
 -- create the user table
 create table user (id integer primary key auto_increment, name varchar(100), email varchar(100), password varchar(100), phone varchar(20));
 
-use mysql;
-update user set authentication_string=password(''), plugin='mysql_native_password' where user='root';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
